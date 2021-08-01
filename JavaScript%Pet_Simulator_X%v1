@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("NoName Scripts v1", "Ocean")
+local Window = Library.CreateLib("NoName Scripts v1.2", "Ocean")
 local Tab = Window:NewTab("Player")
 local Section = Tab:NewSection("Settings")
 wait(1)
@@ -129,4 +129,4 @@ Section:NewKeybind("Toggle UI F", "Press F to Toggle the UI", Enum.KeyCode.F, fu
 	Library:ToggleUI()
 end)
 local Tab = Window:NewTab("Credits")
-local Section = Tab:NewSection("Script ii_renox / UI xHeptc / Autofarm petsimx")
+local Section = Tab:NewSection("Script by ii_renox / UI by xHeptc / ID by naypramx")
