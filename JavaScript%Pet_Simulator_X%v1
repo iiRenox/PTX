@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("NoName Scripts v1.2", "Ocean")
+local Window = Library.CreateLib("NoName Scripts v1.3", "Ocean")
 local Tab = Window:NewTab("Player")
 local Section = Tab:NewSection("Settings")
 wait(1)
@@ -124,6 +124,16 @@ Section:NewButton("AutoFarm", "OP Auto Farm", function()
 getgenv().speed=150
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do v:Disable() end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/inceldom/scrip/main/petsimsex",true))()
+end)
+Section:NewButton("Buy Dominus Egg", "U Need 1B to Use it", function()
+local args = {
+    [1] = {
+        [1] = "Dominus Egg",
+        [2] = false}
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+
 end)
 Section:NewKeybind("Toggle UI F", "Press F to Toggle the UI", Enum.KeyCode.F, function()
 	Library:ToggleUI()
