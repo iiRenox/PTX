@@ -38,7 +38,7 @@ local Tab = Window:NewTab("Teleportation")
 local Section = Tab:NewSection("Where do you want to go?")
 Section:NewTextBox("Player Teleportation", "Put Player name in", function(txt)
 	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-local pl2 = "(txt)"
+local pl2 = ""
 local humanoid = game.Players.LocalPlayer.Character.Humanoid
 humanoid:ChangeState(Enum.HumanoidStateType.Running)
 wait(0.1)
